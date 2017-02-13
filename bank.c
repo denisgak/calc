@@ -4,7 +4,8 @@ int main()
 {
 
 int day,money,result,check;
-check=scanf("%d %d",&d,&m);
+printf("Enter date and money");
+check=scanf("%d %d",&day,&money);
 if((check)&&(day>=0)&&(day<=365)&&(money>=10000)){
 printf("error");}
 else
@@ -37,14 +38,17 @@ else
 			{
 				if(day<366){
 					if(money<100000){
-						result=money*1.06;
+						result=money*1.12;
 						}
 					else
 						{
-						result=money*1.08;
+						result=money*1.15;
 						}
 				}
 			}
 		}
 	}
+	printf("\nAfter %d your cashback will:%d",day,result);
+}
+return 0;
 }					
