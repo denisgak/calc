@@ -4,9 +4,9 @@ int main()
 {
 
 int day,money,result,check;
-printf("Enter date and money");
+printf("Enter date and money: ");
 check=scanf("%d %d",&day,&money);
-if((check)&&(day>=0)&&(day<=365)&&(money>=10000)){
+if((!check)&&(day>=0)&&(day<=365)&&(money>=10000)){
 printf("error");}
 else
 {
