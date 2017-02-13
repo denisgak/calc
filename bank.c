@@ -10,4 +10,4 @@ printf("error");}
 else
 {
 int main()
-{
+
